@@ -1,3 +1,7 @@
+from flask import Flask
+
+app = Flask(__name__)
+
 import webview
 import os
 import sqlite3
@@ -1094,7 +1098,7 @@ class Api:
 
 							    <div class="col-2 room blue-door-color">Bathroom 4
 						      		<div id="bath4dup1" class="droptarget">{bath4dup1}</div>
-						      		<div class="standing-door blue-door-color" style="top:0px;right:0px"></div>
+						      		<div class="standing-door red-door-color" style="top:0px;right:0px"></div>
 						    	</div>
 						    	<div class="col-2">
 						    	</div>
@@ -1356,14 +1360,13 @@ class Api:
 
 							     <div class="col-4 room yellow-door-color align-self-end" style="height:170px">Bedroom 1<br><br><br>
 							      	<div id="bed1B2" class="droptarget">{bed1B2}</div>
-							      	<div class="sleeping-door yellow-door-color" style="bottom:0px;left:0px"></div>
-
+							      
 							     
 							    </div>
 
    								 <div class="col-8 room orange-door-color"style="height:170px">Living Room<br><br><br>
 							      	<div id="livingB2" class="droptarget">{livingB2}</div>
-							      		<div class="standing-door orange-door-color" style="bottom:60px;right:0px"></div>
+							      		
 
 							    </div>
 
@@ -1376,7 +1379,7 @@ class Api:
 
 							     <div class="col-6 room align-self-end yellow-door-color" style="height:170px">Bedroom 2<br><br><br>
 							      	<div id="bed2B2" class="droptarget">{bed2B2}</div>
-							      	<div class="sleeping-door yellow-door-color" style="top:0px;right:0px"></div>
+							      	
 							     
 							    </div>
 
@@ -1426,25 +1429,25 @@ class Api:
 	
 										<div class="col-4 room yellow-door-color">Master Bedroom
 									      	<div id="masterbedB3" class="droptarget">{masterbedB3}</div>
-									      	<div class="sleeping-door yellow-door-color" style="bottom:0px;right:0px"></div>
+									      	
 									      	
 									    </div>
 
 									    <div class="col-2 room blue-door-color">Master Bath
 									      	<div id="masterbathB3" class="droptarget">{masterbathB3}</div>
-									      	<div class="standing-door blue-door-color" style="bottom:0px;left:0px"></div>
+									      
 
 									    </div>
 
 									    <div class="col-2 room blue-door-color">Bath
 									      	<div id="bathB3" class="droptarget">{bathB3}</div>
-									     <div class="standing-door blue-door-color" style="bottom:0px;right:0px"></div>
+									     
 									    </div>
 
 
 										<div class="col-4 room yellow-door-color">Bedroom 1
 									      	<div id="bedB3" class="droptarget">{bedB3}</div>
-									      	<div class="sleeping-door yellow-door-color" style="bottom:0px;left:0px"></div>
+									      
 									      	
 									    </div>
 
@@ -1455,13 +1458,12 @@ class Api:
 
 								    <div class="col-3 room yellow-door-color">Walk-in Closet
 								      	<div id="closetB3" class="droptarget">{closetB3}</div>
-								      	<div class="sleeping-door yellow-door-colo"  style="top:0px;right:0px"></div>
-
+								      
 								    </div>
 
 								    <div class="col-3 room blue-door-color">Laundry
 								      	<div id="laundryB3" class="droptarget">{laundryB3}</div>
-								      	<div class="sleeping-door blue-door-color" style="bottom:0px;right:0px"></div>
+								      
 								    </div>
 								    <div class="col-2">
 								      
@@ -1469,7 +1471,7 @@ class Api:
 
 								    <div class="col-4 room yellow-door-color">Bedroom 2
 								      	<div id="bed2B3" class="droptarget">{bed2B3}</div>
-								      	<div class="standing-door yellow-door-color" style="bottom:0px;left:0px"></div>
+								      	
 								    </div>
 
 							    </div>
@@ -1488,7 +1490,7 @@ class Api:
 
 								    <div class="col-5 room orange-door-color">Living Room
 								      	<div id="livingB3" class="droptarget">{livingB3}</div>
-								      	<div class="sleeping-door orange-door-color" style="bottom:0px;left:0px"></div>
+								      	
 								    </div>
 
 							    </div>
@@ -1505,7 +1507,7 @@ class Api:
 
 								    <div class="col-5 room orange-door-color">Covered Porch
 								      	<div id="coverporchB3" class="droptarget">{coverporchB3}</div>
-								      		<div class="sleeping-door orange-door-color" style="bottom:0px;left:0px"></div>
+								      		
 								    </div>
 							</div>
 
@@ -1520,13 +1522,19 @@ class Api:
 			    images_html = ""
 			    if room_id in grouped_data:
 			        images_html = "".join(
-			            f''' <div> 
-			                    <div data-bs-toggle="modal" data-bs-target="#appModal" data-input-hr="{canvas_id}_{watt}_{applianceName}_{grouped_data[room_id]['roomName']}">
-			                        <input type="hidden" id="{canvas_id}_{watt}_{applianceName}_{grouped_data[room_id]['roomName']}" class="toggleInput" value="1">
-			                        <img data-bs-toggle="tooltip" data-bs-placement="top" title="{applianceName} - {watt} W " draggable="true" data-is-update="1" data-canvas-id="{canvas_id}" 
-			                        data-custom-id="{room_id}" id="{image_id}" src="assets/uploads/{image}" style="height:30px;"  />
-			                    </div>
-			                </div>'''
+						f'''<div>
+						    <div data-bs-toggle="modal" data-bs-target="#appModal" data-input-hr="{canvas_id}_{watt}_{applianceName}_{grouped_data[room_id]['roomName']}">
+						        <input type="hidden" id="{canvas_id}_{watt}_{applianceName}_{grouped_data[room_id]['roomName']}" class="toggleInput" value="1">
+						        
+						        <div style="display: flex; align-items: center;">
+						            <img data-bs-toggle="tooltip" data-bs-placement="top" title="{applianceName} - {watt} W " draggable="true" data-is-update="1" data-canvas-id="{canvas_id}" 
+						            data-custom-id="{room_id}" id="{image_id}" src="assets/uploads/{image}" style="height:30px;" />
+						            
+						            <span id="{canvas_id}_{watt}_{applianceName}_{grouped_data[room_id]['roomName']}_isOn" style="width: 10px; height: 10px; background: green;border: .5px solid white; border-radius: 50%; margin-left: 7px; margin-right: 7px; display: inline-block;"></span>
+						        </div>
+						    </div>
+						</div>'''
+
 			            for image, image_id, canvas_id, watt, applianceName in grouped_data[room_id]['images']
 			        )
 			    result = result.replace(f'{{{html_id}}}', images_html)

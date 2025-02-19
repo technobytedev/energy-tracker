@@ -3,33 +3,8 @@
 
 <head lang="en">
     <meta charset="UTF-8">
-    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
     <style>
-
-                .container-s {
-  position: relative;
-  width: 100%; /* Adjust the width according to your needs */
-  height: 500px; /* Adjust the height according to your needs */
-  margin: auto;
-
-  overflow: auto;
-}
-
-.background-image {
-  width: 640px; /* Ensures the image takes the full width of the container */
-  height:500px; /* Ensures the image takes the full height of the container */
-}
-
-.overlay {
-  position: absolute;
-  top: 50px; /* Adjust this to position your div vertically */
-  left: 100px; /* Adjust this to position your div horizontally */
-
-  width: 200px;
-  height: 70px;
-  background-color: rgba(255, 255, 255, 0.7); /* Optional background */
-  border-radius: 5px; /* Optional, for styling */
-}
 
       #loading-screen {
       display: flex;
@@ -107,8 +82,6 @@
 /*            border: 1px solid black;*/
             margin-bottom: 15px;
             position: relative;
-            width: 180px!important;
-            margin: auto!important;
         }
         .sleeping-door {
             position: absolute;
@@ -284,7 +257,7 @@
                        <div class="row px-2" style="margin:auto"> 
                         <div class="col-4 my-auto "> <h6  style="text-align: center;"> <span id="stitle">  </span></h6>  </div> 
                         <div class="col-4 my-auto ">  <h6 style="text-align: center;" id="hrsTitle"></h6>   </div> 
-                        <div class="col-4 my-auto mx-auto ">  <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete"
+                        <div class="col-4 my-auto mx-auto ">  <img src="delete.png" style="margin: auto;" class="droptarget" id="delete"
                             style="width:45px;height:45px;border:none!important;"> 
                         </div> 
                         </div>
@@ -763,7 +736,7 @@ document.addEventListener('show.bs.modal', function (event) {
 
     document.getElementById('appModal').addEventListener('shown.bs.modal', initializeToggleSwitch);
 
-   async function toggleInputValue() {
+    function toggleInputValue() {
         var inputID = document.getElementById('inputSaver').value;
         var input = document.getElementById(inputID);
         var toggleSwitch = document.getElementById('toggleSwitch');
@@ -772,13 +745,7 @@ document.addEventListener('show.bs.modal', function (event) {
         input.value = input.value === "1" ? "0" : "1";
 
         // Set the toggle switch checked state based on the input value
-        toggleSwitch.checked = await input.value === "1";
-
-        if(input.value === "1")  {
-            document.getElementById(inputID + '_isOn').style.backgroundColor = 'green';
-        }else {
-            document.getElementById(inputID + '_isOn').style.backgroundColor = 'red';
-        }
+        toggleSwitch.checked = input.value === "1";
     }
 
     function initializeToggleSwitch() {
@@ -1407,8 +1374,8 @@ document.getElementById('targett').style.backgroundColor = 'black!important';
 
     </script>
 
-    <script src="assets/bootstrap.min.js"></script>
-    <script src="assets/sweetalert.js"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='sweetalert.js') }}"></script>
 
     <script type="text/javascript">
     
