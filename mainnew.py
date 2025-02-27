@@ -812,9 +812,9 @@ class Api:
 					               </div>
 
 					            </div>
-					            <div class="modal-body d-flex">
-					               {outdoorLivingLeft}
-					               
+					            <div class="modal-body">
+					                <!-- The div will go here inside the modal -->
+					                <div >{outdoorLivingLeft}</div>
 					            </div>
 					        </div>
 					    </div>
@@ -1557,18 +1557,18 @@ class Api:
 			    images_html = ""
 			    if room_id in grouped_data:
 			        images_html = "".join(
-						f'''
-						    <span style="width:90px!important; padding:5px" data-bs-toggle="modal" data-bs-target="#appModal" data-input-hr="{canvas_id}_{watt}_{applianceName}_{grouped_data[room_id]['roomName']}">
+						f'''<div>
+						    <div data-bs-toggle="modal" data-bs-target="#appModal" data-input-hr="{canvas_id}_{watt}_{applianceName}_{grouped_data[room_id]['roomName']}">
 						        <input type="hidden" id="{canvas_id}_{watt}_{applianceName}_{grouped_data[room_id]['roomName']}" class="toggleInput" value="1">
 						        
-						        <div>
+						        <div >
 						            <img data-bs-toggle="tooltip" data-bs-placement="top" title="{applianceName} - {watt} W " draggable="true" data-is-update="1" data-canvas-id="{canvas_id}" 
 						            data-custom-id="{room_id}" id="{image_id}" src="assets/uploads/{image}" style="height:30px;" />
 						            
 						            <span id="{canvas_id}_{watt}_{applianceName}_{grouped_data[room_id]['roomName']}_isOn" style="width: 10px; height: 10px; background: green;border: .5px solid white; border-radius: 50%; margin-left: 7px; margin-right: 7px; display: inline-block;"></span>
 						        </div>
-						    </span>
-						'''
+						    </div>
+						</div>'''
 
 			            for image, image_id, canvas_id, watt, applianceName in grouped_data[room_id]['images']
 			        )
