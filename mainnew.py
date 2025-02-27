@@ -1360,7 +1360,7 @@ class Api:
 
 
 			if(simulation_id == '91'):
-				# Map HTML IDs to room IDs Bungalow 1
+				# Map HTML IDs to room IDs Bungalow 2
 				room_id_map = {
 
 					'dinnerkitchenB2': 'dinnerkitchenB2',
