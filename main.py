@@ -101,6 +101,7 @@ class Api:
 
 	        restricted_appliance_id_1 = ['91', '92', '93', '94']
 	        restricted_appliance_id_2 = ['77', '78', '79', '80']
+
 	        restricted_rooms_id_1 = [
 	            'cont1_bedroom2', 'cont1_bedroom3',
 	            'cont1_greatroom', 'cont1_masterbedroom',
@@ -117,7 +118,8 @@ class Api:
 	            'bungalow2_bedroom2', 'bungalow3_bedroom1',
 	            'bungalow3_bedroom2', 'bungalow3_bathroom',
 	            'bungalow2_master_bedroom', 'bungalow2_bathroom',
-	            'cont2_master_bedroom','bungalow1_bath1', 'bungalow1_bath2'
+	            'cont2_master_bedroom','bungalow1_bath1', 'bungalow1_bath2','cont3_master_bathroom',
+	            'cont3_master_bedroom','cont3_bathroom', 'cont3_bedroom'
 	       		]
 	       	restricted_rooms_id_2 = [
 	            'cont1_greatroom',
@@ -125,7 +127,8 @@ class Api:
 	            'duplex2_bathroom1',
 	            'duplex2_bathroom2','cont2_master_bathroom',
 	            'cont2_bathroom', 'duplex1_bathroom','bungalow2_bathroom',
-	          	'bungalow1_bath1', 'bungalow1_bath2'
+	          	'bungalow1_bath1', 'bungalow1_bath2','cont3_master_bathroom',
+	          	'cont3_bathroom'
 	       		]	  	       		
 
 	       	if room_id in restricted_rooms_id_1 and appliance_id in restricted_appliance_id_1:
@@ -1793,127 +1796,346 @@ class Api:
 				# Map HTML IDs to room IDs Bungalow 1
 				room_id_map = {
 
-					'kitchen1tg': 'kitchen1tg',
-					'kitchen2tg': 'kitchen2tg',
-					'kitchen3tg': 'kitchen3tg',
+					'cont3_covered_deck': 'cont3_covered_deck',
+					'cont3_laundry': 'cont3_laundry',
+					'cont3_greatroom': 'cont3_greatroom',
+					'cont3_dining': 'cont3_dining',
+					'cont3_wic1': 'cont3_wic1',
+					'cont3_wic2': 'cont3_wic2',
+					'cont3_wic3': 'cont3_wic3',
+					'cont3_master_bathroom': 'cont3_master_bathroom',
+					'cont3_master_bedroom': 'cont3_master_bedroom',
+					'cont3_foyer': 'cont3_foyer',
+					'cont3_bathroom': 'cont3_bathroom',
+					'cont3_bedroom': 'cont3_bedroom',
+					'cont3_pan': 'cont3_pan',
+					'cont3_front_porch': 'cont3_front_porch',
+					'cont3_kitchen': 'cont3_kitchen',
 
-					'tb1tg': 'tb1tg',
-					'tb2tg': 'tb2tg',
-					'tb3tg': 'tb3tg',
 
-					'dining1tg': 'dining1tg',
-					'dining2tg': 'dining2tg',
-					'dining3tg': 'dining3tg',
-
-					'living1tg': 'living1tg',
-					'living2tg': 'living2tg',
-					'living3tg': 'living3tg'
 
 
 				}
 				result = """
-				<div class="row mt-3">
+				<img src='assets/blueprints/contemporary3.png' usemap="#image-map" style="width:auto; height:auto; margin:auto">
+				<map name="image-map">
+				    <area id="cont3_covered_deck" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_covered_deckModal" alt="service" title="Click to Appliances" coords="55,25,516,134" shape="rect">
+				    <area id="cont3_laundry" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_laundryModal" alt="bathroom" title="Click to View Appliances" coords="55,171,145,227" shape="rect">
+				    <area id="cont3_greatroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_greatroomModal" alt="bedroom1" title="Click to View Appliances" coords="156,167,324,328" shape="rect">
+				    <area id="cont3_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_diningModal" alt="bedroom2" title="Click to View Appliances" coords="330,168,398,328" shape="rect">
+				    <area id="cont3_wic1" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_wic1Modal" alt="kitchen" title="Click to View Appliances" coords="49,240,146,283" shape="rect">
+				    <area id="cont3_wic2" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_wic2Modal" alt="dining" title="Click to View Appliances" coords="154,336,218,371" shape="rect">
+				    <area id="cont3_wic3" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_wic3Modal" alt="living room" title="Click to View Appliances" coords="411,336,456,384" shape="rect">
+				    <area id="cont3_master_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_master_bathroomModal" alt="porch" title="Click to View Appliances" coords="51,294,146,370" shape="rect">
+					<area id="cont3_master_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_master_bedroomModal" alt="porch" title="Click to View Appliances" coords="52,381,214,503" shape="rect">
+				    <area id="cont3_foyer" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_foyerModal" alt="porch" title="Click to View Appliances" coords="225,337,339,481" shape="rect">
+					<area id="cont3_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_bathroomModal" alt="porch" title="Click to View Appliances" coords="350,335,403,432" shape="rect">
+				    <area id="cont3_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_bedroomModal" alt="porch" title="Click to View Appliances" coords="415,392,514,391,513,503,411,501,351,499,350,441,412,440" shape="poly">
+				    <area id="cont3_front_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_front_porchModal" alt="porch" title="Click to View Appliances" coords="187,517,380,658" shape="rect">
+				     <area id="cont3_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_kitchenModal" alt="porch" title="Click to View Appliances" coords="400,173,515,325" shape="rect">
+				       <area id="cont3_pan" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_panModal" alt="porch" title="Click to View Appliances" coords="464,338,516,382" shape="rect">
+
+				</map>
 
 
-						<div class="col-12">
-							<div class="row">
-	
+									<!-- Modal for Duplex1 Covered Deck -->
+					<div class="modal fade" id="cont3_front_porchModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Front Porch</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_front_porch}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-							    <div class="col-1">
-						      		
-						    	</div>
+										<!-- Modal for Duplex1 Covered Deck -->
+					<div class="modal fade" id="cont3_kitchenModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Kitchen</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_kitchen}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-								<div class="col-2 room red-door-color">Kitchen 1
-						      		<div id="kitchen1tg" class="droptarget">{kitchen1tg}</div>
-						      		
-						    	</div>
+					<!-- Modal for Duplex1 Covered Deck -->
+					<div class="modal fade" id="cont3_covered_deckModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Covered Deck</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_covered_deck}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-								<div class="col-1 room blue-door-color">Bathroom
-						      		<div id="tb1tg" class="droptarget">{tb1tg}</div>
-						      		<div class="standing-door blue-door-color" style="bottom:0px;left:0px"></div>
-						      		
-						    	</div>
+					<!-- Modal for Duplex1 Laundry -->
+					<div class="modal fade" id="cont3_laundryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Laundry</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_laundry}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-						   		<div class="col-1">
-						      		
-						    	</div>
+					<!-- Modal for Duplex1 Great Room -->
+					<div class="modal fade" id="cont3_greatroomModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Great Room</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_greatroom}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-								<div class="col-2 room red-door-color">Kitchen 2
-						      		<div id="kitchen2tg" class="droptarget">{kitchen2tg}</div>
-						      		
-						    	</div>
+					<!-- Modal for Duplex1 Dining -->
+					<div class="modal fade" id="cont3_diningModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Dining</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_dining}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-								<div class="col-1 room blue-door-color">Bathroom
-						      		<div id="tb2tg" class="droptarget">{tb2tg}</div>
-						      		<div class="standing-door blue-door-color" style="bottom:0px;left:0px"></div>
-						      		
-						    	</div>
+					<!-- Modal for Duplex1 Walk-In Closet 1 -->
+					<div class="modal fade" id="cont3_wic1Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Walk-In Closet 1</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_wic1}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-						    	<div class="col-1">
-						      		
-						    	</div>
+					<!-- Modal for Duplex1 Walk-In Closet 2 -->
+					<div class="modal fade" id="cont3_wic2Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Walk-In Closet 2</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_wic2}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-								<div class="col-2 room red-door-color">Kitchen 3
-						      		<div id="kitchen3tg" class="droptarget">{kitchen3tg}</div>
-						      		
-						    	</div>
+					<!-- Modal for Duplex1 Walk-In Closet 3 -->
+					<div class="modal fade" id="cont3_wic3Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Walk-In Closet 3</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_wic3}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-								<div class="col-1 room blue-door-color">Bathroom
-						      		<div id="tb3tg" class="droptarget">{tb3tg}</div>
-						      		<div class="standing-door blue-door-color" style="bottom:0px;left:0px"></div>
-						      		
-						    	</div>
+					<!-- Modal for Duplex1 Master Bathroom -->
+					<div class="modal fade" id="cont3_master_bathroomModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Master Bathroom</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_master_bathroom}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-							</div>
-						</div>
+					<!-- Modal for Duplex1 Master Bedroom -->
+					<div class="modal fade" id="cont3_master_bedroomModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Master Bedroom</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_master_bedroom}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
+					<!-- Modal for Duplex1 Foyer -->
+					<div class="modal fade" id="cont3_foyerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Foyer</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_foyer}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-						<div class="col-12">
-							<div class="row">
-	
+					<!-- Modal for Duplex1 Foyer -->
+					<div class="modal fade" id="cont3_bathroomModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Bathroom</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_bathroom}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
-								<div class="col-4 room  red-door-color">Dining 1
-							      	<div id="dining1tg" class="droptarget">{dining1tg}</div>
-							    </div>
-
-							    <div class="col-4 room  red-door-color">Dining 2
-							      	<div id="dining2tg" class="droptarget">{dining2tg}</div>
-							    </div>
-
-							     <div class="col-4 room  red-door-color">Dining 3
-							      	<div id="dining3tg" class="droptarget">{dining3tg}</div>
-							    </div>
-
-
-							</div>
-						</div>
-
-						<div class="col-12">
-							<div class="row">
-	
-
-								<div class="col-4 room  orange-door-color">Living 1
-							      	<div id="living1tg" class="droptarget">{living1tg}</div>
-							      	<div class="sleeping-door orange-door-color" style="bottom:0px;right:0px"></div>
-
-							    </div>
-
-							    <div class="col-4 room orange-door-color">Living 2
-							      	<div id="living2tg" class="droptarget">{living2tg}</div>
-							      	<div class="sleeping-door orange-door-color" style="bottom:0px;right:0px"></div>
-
-							    </div>
-
-							     <div class="col-4 room orange-door-color">Living 3
-							      	<div id="living3tg" class="droptarget">{living3tg}</div>
-							      	<div class="sleeping-door orange-door-color" style="bottom:0px;right:0px"></div>
-							    </div>
-
-
-							</div>
-						</div>
-
-				  </div>
+										<!-- Modal for Duplex1 Foyer -->
+					<div class="modal fade" id="cont3_bedroomModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Bedroom 2</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_bedroom}
+					            </div>
+					        </div>
+					    </div>
+					</div>
+															<!-- Modal for Duplex1 Foyer -->
+					<div class="modal fade" id="cont3_panModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					    <div class="modal-dialog modal-dialog-centered" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header">
+					                <h5 class="modal-title" id="exampleModalLabel">Pan</h5>
+					                <div style="width:100px" class="row">
+					                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+					                    <div class="col p-2">
+					                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="modal-body d-flex">
+					                {cont3_pan}
+					            </div>
+					        </div>
+					    </div>
+					</div>
 				"""
 
 
