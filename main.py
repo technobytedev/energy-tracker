@@ -1,7 +1,3 @@
-from flask import Flask
-
-app = Flask(__name__)
-
 import webview
 import os
 import sqlite3
