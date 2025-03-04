@@ -503,8 +503,8 @@ class Api:
 				# Generate HTML
 
 				result = """
-				<img src='assets/blueprints/duplex2.png' usemap="#image-map" style="width:auto; height:auto">
-				<map name="image-map">
+				<img src='assets/blueprints/duplex2.png' usemap="#image-map" style="width:auto; height:auto"><br>
+				<map name="image-map" style="display:none">
 				    <area id="duplex2_bedroom1" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex2_bedroom1Modal" alt="bedroom1" title="Click to View Bedroom 1" coords="17,424,223,637" shape="rect">
 				    <area id="duplex2_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex2_bedroom2Modal" alt="bedroom2" title="Click to View Bedroom 2" coords="211,14,379,225" shape="rect">
 				    <area id="duplex2_bedroom3" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex2_bedroom3Modal" alt="bedroom3" title="Click to View Bedroom 3" coords="16,16,184,227" shape="rect">
@@ -733,19 +733,19 @@ class Api:
 					'cont1_master_bathroom': 'cont1_master_bathroom'
 				}
 				result = """
-				<img src='assets/blueprints/contemporary1.png' usemap="#image-map" style="width:auto; height:auto">
+				<img src='assets/blueprints/contemporary1.png' usemap="#image-map" style="width:auto; height:auto"><br>
 
-				<map name="image-map">
-				    <area id="cont1_patio" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_patioModal" alt="patio" title="Click to View Patio" coords="220,27,399,147" shape="rect">
-				    <area id="cont1_garage" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_garageModal" alt="garage" title="Click to View Garage" coords="21,57,201,332" shape="rect">
-				    <area id="cont1_pantry" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_pantryModal" alt="pantry" title="Click to View Pantry" coords="213,231,295,278" shape="rect">
+				<map name="image-map" style="display:none">
+				    <area id="cont1_patio" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_patioModal" alt="patio" title="Click to View Patio" coords="234,27,438,163" shape="rect">
+				    <area id="cont1_garage" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_garageModal" alt="garage" title="Click to View Garage" coords="35,70,213,356" shape="rect">
+				    <area id="cont1_pantry" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_pantryModal" alt="pantry" title="Click to View Pantry" coords="233,297,318,248" shape="rect">
 				    <area id="cont1_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_kitchenModal" alt="kitchen" title="Click to View Kitchen" coords="306,171,428,368" shape="rect">
 				    <area id="cont1_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_bedroom2Modal" alt="bedroom2" title="Click to View Bedroom 2" coords="471,171,598,326" shape="rect">
 				    <area id="cont1_bedroom3" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_bedroom3Modal" alt="bedroom3" title="Click to View Bedroom 3" coords="612,173,780,293" shape="rect">
 				    <area id="cont1_greatroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_greatroomModal" alt="greatroom" title="Click to View Great Room" coords="305,369,497,596" shape="rect">
-				    <area id="cont1_masterbedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_masterbedroomModal" alt="masterbedroom" title="Click to View Master Bedroom" coords="516,445,696,609" shape="rect">
-				    <area id="cont1_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_bathroomModal" alt="bathroom" title="Click to View Bathroom" coords="709,309,779,419" shape="rect">
-				    <area id="cont1_master_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_master_bathroomModal" alt="master_bathroom" title="Click to View Master Bathroom" coords="709,434,779,544" shape="rect">
+				    <area id="cont1_masterbedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_masterbedroomModal" alt="masterbedroom" title="Click to View Master Bedroom" coords="558,475,749,656" shape="rect">
+				    <area id="cont1_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_bathroomModal" alt="bathroom" title="Click to View Bathroom" coords="763,328,838,449" shape="rect">
+				    <area id="cont1_master_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont1_master_bathroomModal" alt="master_bathroom" title="Click to View Master Bathroom" coords="763,461,837,587" shape="rect">
 				</map>
 
 				<!-- Modal for Cont1 Patio -->
@@ -961,8 +961,8 @@ class Api:
 					'duplex3_living': 'duplex3_living'
 				}
 				result = """
-			<img src='assets/blueprints/duplex3.png' usemap="#image-map" style="width:auto; height:auto">
-				<map name="image-map">
+			<img src='assets/blueprints/duplex3.png' usemap="#image-map" style="width:auto; height:auto"><br>
+				<map name="image-map" style="display:none">
 				    <area id="duplex3_porch1" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex3_porch1Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="30,895,243,965" shape="rect">
 				    <area id="duplex3_porch2" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex3_porch2Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="40,6,277,91" shape="rect">
 				    <area id="duplex3_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex3_bedroomModal" alt="dining-kitchen1" title="Click to View Appliances" coords="40,118,283,318" shape="rect">
@@ -1107,8 +1107,8 @@ class Api:
 
 				}
 				result = """
-				<img src='assets/blueprints/bungalow1.png' usemap="#image-map" style="width:auto; height:auto">
-				<map name="image-map">
+				<img src='assets/blueprints/bungalow1.png' usemap="#image-map" style="width:auto; height:auto"><br>
+				<map name="image-map" style="display:none">
 				    <area id="bungalow1_dining_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow1_dining_kitchenModal" alt="dining-kitchen1" title="Click to View Appliances" coords="230,303,60,194" shape="rect">
 				    <area id="bungalow1_bedroom1" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow1_bedroom1Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="428,243,267,144" shape="rect">
 				    <area id="bungalow1_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow1_bedroom2Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="616,241,483,145" shape="rect">
@@ -1341,25 +1341,49 @@ class Api:
 					'cont2_covered_porch': 'cont2_covered_porch',
 
 					'cont2_bathroom': 'cont2_bathroom',
-					'cont2_bed3': 'cont2_bed3'
+					'cont2_bed3': 'cont2_bed3',
+					'cont2_pantry':'cont2_pantry'
 				}
 				result = """
-				<img src='assets/blueprints/contemporary2.png' usemap="#image-map" style="width:auto; height:auto">
-				<map name="image-map">
-				    <area id="cont2_mudroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_mudroomModal" alt="mudroom" title="Click to View Mud Room" coords="16,27,230,106" shape="rect">
-				    <area id="cont2_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_kitchenModal" alt="kitchen" title="Click to View Kitchen" coords="241,27,445,165" shape="rect">
-				    <area id="cont2_bed2" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_bed2Modal" alt="bed2" title="Click to View Bedroom 2" coords="460,30,605,164" shape="rect">
-				    <area id="cont2_mech" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_mechModal" alt="mech" title="Click to View Mechanical" coords="20,111,136,152" shape="rect">
-				    <area id="cont2_master_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_master_bathroomModal" alt="master_bathroom" title="Click to View Master Bathroom" coords="21,163,134,264" shape="rect">
-				    <area id="cont2_wic" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_wicModal" alt="wic" title="Click to View Walk-In Closet" coords="145,199,228,273" shape="rect">
-				    <area id="cont2_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_diningModal" alt="dining" title="Click to View Dining Room" coords="240,178,446,290" shape="rect">
-				    <area id="cont2_living" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_livingModal" alt="living" title="Click to View Living Room" coords="239,295,444,466" shape="rect">
-				    <area id="cont2_covered_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_covered_porchModal" alt="covered_porch" title="Click to View Covered Porch" coords="14,477,606,567" shape="rect">
-				    <area id="cont2_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_bathroomModal" alt="bathroom" title="Click to View Bathroom" coords="497,202,606,292" shape="rect">
+				<img src='assets/blueprints/contemporary2.png' usemap="#image-map" style="width:auto; height:auto"><br>
+				<map name="image-map" style="display:none">
+				    <area id="cont2_mudroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_mudroomModal" alt="mudroom" title="Click to View Mud Room" coords="79,52,364,162" shape="rect">
+				    <area id="cont2_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_kitchenModal" alt="kitchen" title="Click to View Kitchen" coords="385,82,586,248" shape="rect">
+				    <area id="cont2_bed2" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_bed2Modal" alt="bed2" title="Click to View Bedroom 2" coords="685,53,888,246" shape="rect">
+				    <area id="cont2_mech" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_mechModal" alt="mech" title="Click to View Mechanical" coords="73,173,234,225" shape="rect">
+				    <area id="cont2_master_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_master_bathroomModal" alt="master_bathroom" title="Click to View Master Bathroom" coords="76,237,237,391" shape="rect">
+				    <area id="cont2_wic" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_wicModal" alt="wic" title="Click to View Walk-In Closet" coords="249,251,367,387" shape="rect">
+				    <area id="cont2_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_diningModal" alt="dining" title="Click to View Dining Room" coords="386,255,667,441" shape="rect">
+				    <area id="cont2_living" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_livingModal" alt="living" title="Click to View Living Room" coords="379,444,665,662" shape="rect">
+				    <area id="cont2_covered_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_covered_porchModal" alt="covered_porch" title="Click to View Covered Porch" coords="68,684,898,802" shape="rect">
+				    <area id="cont2_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_bathroomModal" alt="bathroom" title="Click to View Bathroom" coords="741,293,890,407" shape="rect">
 				  	<area id="cont2_master_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_master_bedroomModal" alt="master_bathroom" title="Click to View Master Bathroom" coords="34,291,210,432" shape="rect">  
-				    <area id="cont2_bed3" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_bed3Modal" alt="bed3" title="Click to View Bedroom 3" coords="460,316,601,444" shape="rect">
+				    <area id="cont2_bed3" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_bed3Modal" alt="bed3" title="Click to View Bedroom 3" coords="690,438,890,636" shape="rect">
+				    <area id="cont2_pantry" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont2_pantryModal" alt="bed3" title="Click to View Pantry" coords="594,50,673,130" shape="rect">
+
+
 				</map>
 
+
+
+				<div class="modal fade" id="cont2_pantryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				    <div class="modal-dialog modal-dialog-centered" role="document">
+				        <div class="modal-content">
+				            <div class="modal-header">
+				                <h5 class="modal-title" id="exampleModalLabel">Pantry</h5>
+				                <div style="width:100px" class="row">
+				                    <img src="delete.png" style="margin: auto; width: 35px!important;" class="droptarget" id="delete" style="width:45px;height:45px;border:none!important;">
+				                    <div class="col p-2">
+				                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="modal-body d-flex">
+				                {cont2_pantry}
+				            </div>
+				        </div>
+				    </div>
+				</div>
 
 
 				<div class="modal fade" id="cont2_master_bedroomModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1614,16 +1638,16 @@ class Api:
 
 				}
 				result = """
-				<img src='assets/blueprints/duplex1.png' usemap="#image-map" style="width:auto; height:auto; margin:auto">
-				<map name="image-map">
-				    <area id="duplex1_service" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_serviceModal" alt="service" title="Click to View Service" coords="438,95,578,141" shape="rect">
-				    <area id="duplex1_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bathroomModal" alt="bathroom" title="Click to View Bathroom" coords="352,134,422,247" shape="rect">
-				    <area id="duplex1_bedroom1" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bedroom1Modal" alt="bedroom1" title="Click to View Bedroom 1" coords="187,171,336,317" shape="rect">
-				    <area id="duplex1_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bedroom2Modal" alt="bedroom2" title="Click to View Bedroom 2" coords="188,342,336,496" shape="rect">
-				    <area id="duplex1_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_kitchenModal" alt="kitchen" title="Click to View Kitchen" coords="440,153,595,263" shape="rect">
-				    <area id="duplex1_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_diningModal" alt="dining" title="Click to View Dining" coords="348,270,593,415" shape="rect">
-				    <area id="duplex1_living_room" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_living_roomModal" alt="living room" title="Click to View Living Room" coords="351,428,457,425,585,429,585,585,427,589,430,506,353,505,349,428" shape="poly">
-				    <area id="duplex1_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_porchModal" alt="porch" title="Click to View Porch" coords="178,522,414,600" shape="rect">
+				<img src='assets/blueprints/duplex1.png' usemap="#image-map" style="width:auto; height:auto; margin:auto"> <br>
+				<map name="image-map" style="display:none">
+				    <area id="duplex1_service" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_serviceModal" alt="service" title="Click to View Service" coords="551,23,743,82" shape="rect">
+				    <area id="duplex1_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bathroomModal" alt="bathroom" title="Click to View Bathroom" coords="446,57,538,212" shape="rect">
+				    <area id="duplex1_bedroom1" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bedroom1Modal" alt="bedroom1" title="Click to View Bedroom 1" coords="233,94,428,293" shape="rect">
+				    <area id="duplex1_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bedroom2Modal" alt="bedroom2" title="Click to View Bedroom 2" coords="236,313,427,507" shape="rect">
+				    <area id="duplex1_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_kitchenModal" alt="kitchen" title="Click to View Kitchen" coords="552,94,748,219" shape="rect">
+				    <area id="duplex1_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_diningModal" alt="dining" title="Click to View Dining" coords="447,227,744,398" shape="rect">
+				    <area id="duplex1_living_room" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_living_roomModal" alt="living room" title="Click to View Living Room" coords="445,413,738,419,743,606,546,611,536,518,448,506" shape="poly">
+				    <area id="duplex1_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_porchModal" alt="porch" title="Click to View Porch" coords="225,529,519,615" shape="rect">
 				</map>
 
 				<!-- Modal for Duplex1 Service -->
@@ -1813,23 +1837,23 @@ class Api:
 
 				}
 				result = """
-				<img src='assets/blueprints/contemporary3.png' usemap="#image-map" style="width:auto; height:auto; margin:auto">
-				<map name="image-map">
-				    <area id="cont3_covered_deck" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_covered_deckModal" alt="service" title="Click to Appliances" coords="55,25,516,134" shape="rect">
-				    <area id="cont3_laundry" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_laundryModal" alt="bathroom" title="Click to View Appliances" coords="55,171,145,227" shape="rect">
-				    <area id="cont3_greatroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_greatroomModal" alt="bedroom1" title="Click to View Appliances" coords="156,167,324,328" shape="rect">
-				    <area id="cont3_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_diningModal" alt="bedroom2" title="Click to View Appliances" coords="330,168,398,328" shape="rect">
-				    <area id="cont3_wic1" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_wic1Modal" alt="kitchen" title="Click to View Appliances" coords="49,240,146,283" shape="rect">
-				    <area id="cont3_wic2" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_wic2Modal" alt="dining" title="Click to View Appliances" coords="154,336,218,371" shape="rect">
-				    <area id="cont3_wic3" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_wic3Modal" alt="living room" title="Click to View Appliances" coords="411,336,456,384" shape="rect">
-				    <area id="cont3_master_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_master_bathroomModal" alt="porch" title="Click to View Appliances" coords="51,294,146,370" shape="rect">
-					<area id="cont3_master_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_master_bedroomModal" alt="porch" title="Click to View Appliances" coords="52,381,214,503" shape="rect">
-				    <area id="cont3_foyer" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_foyerModal" alt="porch" title="Click to View Appliances" coords="225,337,339,481" shape="rect">
-					<area id="cont3_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_bathroomModal" alt="porch" title="Click to View Appliances" coords="350,335,403,432" shape="rect">
-				    <area id="cont3_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_bedroomModal" alt="porch" title="Click to View Appliances" coords="415,392,514,391,513,503,411,501,351,499,350,441,412,440" shape="poly">
-				    <area id="cont3_front_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_front_porchModal" alt="porch" title="Click to View Appliances" coords="187,517,380,658" shape="rect">
-				     <area id="cont3_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_kitchenModal" alt="porch" title="Click to View Appliances" coords="400,173,515,325" shape="rect">
-				       <area id="cont3_pan" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_panModal" alt="porch" title="Click to View Appliances" coords="464,338,516,382" shape="rect">
+				<img src='assets/blueprints/contemporary3.png' usemap="#image-map" style="width:auto; height:auto; margin:auto"> <br>
+				<map name="image-map" style="display:none">
+				    <area id="cont3_covered_deck" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_covered_deckModal" alt="service" title="Click to Appliances" coords="84,41,619,177" shape="rect">
+				    <area id="cont3_laundry" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_laundryModal" alt="bathroom" title="Click to View Appliances" coords="72,217,188,283" shape="rect">
+				    <area id="cont3_greatroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_greatroomModal" alt="bedroom1" title="Click to View Appliances" coords="202,202,393,411" shape="rect">
+				    <area id="cont3_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_diningModal" alt="bedroom2" title="Click to View Appliances" coords="410,214,508,414" shape="rect">
+				    <area id="cont3_wic1" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_wic1Modal" alt="kitchen" title="Click to View Appliances" coords="71,304,187,357" shape="rect">
+				    <area id="cont3_wic2" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_wic2Modal" alt="dining" title="Click to View Appliances" coords="202,420,273,465" shape="rect">
+				    <area id="cont3_wic3" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_wic3Modal" alt="living room" title="Click to View Appliances" coords="514,420,570,476" shape="rect">
+				    <area id="cont3_master_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_master_bathroomModal" alt="porch" title="Click to View Appliances" coords="77,369,184,463" shape="rect">
+					<area id="cont3_master_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_master_bedroomModal" alt="porch" title="Click to View Appliances" coords="74,481,272,623" shape="rect">
+				    <area id="cont3_foyer" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_foyerModal" alt="porch" title="Click to View Appliances" coords="290,419,427,624" shape="rect">
+					<area id="cont3_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_bathroomModal" alt="porch" title="Click to View Appliances" coords="437,421,501,536" shape="rect">
+				    <area id="cont3_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_bedroomModal" alt="porch" title="Click to View Appliances" coords="514,493,640,489,637,623,518,622,445,623,440,580,440,546,516,549" shape="poly">
+				    <area id="cont3_front_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_front_porchModal" alt="porch" title="Click to View Appliances" coords="233,643,480,816" shape="rect">
+				     <area id="cont3_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_kitchenModal" alt="porch" title="Click to View Appliances" coords="518,212,644,411" shape="rect">
+				       <area id="cont3_pan" class="droptarget" data-bs-toggle="modal" data-bs-target="#cont3_panModal" alt="porch" title="Click to View Appliances" coords="580,422,637,477" shape="rect">
 
 				</map>
 
@@ -2156,22 +2180,24 @@ class Api:
 
 				}
 				result = """
-				<img src='assets/blueprints/bungalow2.png' usemap="#image-map" style="width:auto; height:auto">
-				<map name="image-map">
-				    <area id="bungalow2_open_terrace" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_open_terraceModal" alt="dining-kitchen1" title="Click to View Appliances" coords="539,131,396,90" shape="rect">
-				    <area id="bungalow2_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_kitchenModal" alt="dining-kitchen1" title="Click to View Appliances" coords="364,208,245,109" shape="rect">
-				    <area id="bungalow2_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_diningModal" alt="dining-kitchen1" title="Click to View Appliances" coords="538,299,393,166" shape="rect">
-				    <area id="bungalow2_bedroom1" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_bedroom1Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="679,284,569,161" shape="rect">
-				    <area id="bungalow2_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_bedroom2Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="677,520,567,397" shape="rect">
-				    <area id="bungalow2_t_b" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_t_bModal" alt="dining-kitchen1" title="Click to View Appliances" coords="306,292,226,235" shape="rect">
-				    <area id="bungalow2_wic" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_wicModal" alt="dining-kitchen1" title="Click to View Appliances" coords="371,303,318,232" shape="rect">
-				    <area id="bungalow2_garage" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_garageModal" alt="dining-kitchen1" title="Click to View Appliances" coords="203,467,42,317" shape="rect">
-				    <area id="bungalow2_master_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_master_bedroomModal" alt="dining-kitchen1" title="Click to View Appliances" coords="367,482,230,318" shape="rect">
-				    <area id="bungalow2_living_room" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_living_roomModal" alt="dining-kitchen1" title="Click to View Appliances" coords="540,470,388,300" shape="rect">
-					<area id="bungalow2_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_bathroomModal" alt="dining-kitchen1" title="Click to View Appliances" coords="709,367,611,306" shape="rect">
+				
+				<map name="image-map" style="display:none">
+				    <area id="bungalow2_open_terrace" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_open_terraceModal" alt="dining-kitchen1" title="Click to View Appliances" coords="437,98,630,157" shape="rect">
+				    <area id="bungalow2_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_kitchenModal" alt="dining-kitchen1" title="Click to View Appliances" coords="268,126,415,246" shape="rect">
+				    <area id="bungalow2_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_diningModal" alt="dining-kitchen1" title="Click to View Appliances" coords="438,172,627,343" shape="rect">
+				    <area id="bungalow2_bedroom1" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_bedroom1Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="643,165,783,335" shape="rect">
+				    <area id="bungalow2_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_bedroom2Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="642,439,782,609" shape="rect">
+				    <area id="bungalow2_t_b" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_t_bModal" alt="dining-kitchen1" title="Click to View Appliances" coords="257,274,357,334" shape="rect">
+				    <area id="bungalow2_wic" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_wicModal" alt="dining-kitchen1" title="Click to View Appliances" coords="367,266,422,345" shape="rect">
+				    <area id="bungalow2_garage" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_garageModal" alt="dining-kitchen1" title="Click to View Appliances" coords="40,354,235,543" shape="rect">
+				    <area id="bungalow2_master_bedroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_master_bedroomModal" alt="dining-kitchen1" title="Click to View Appliances" coords="262,385,418,545" shape="rect">
+				    <area id="bungalow2_living_room" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_living_roomModal" alt="dining-kitchen1" title="Click to View Appliances" coords="437,367,625,545" shape="rect">
+					<area id="bungalow2_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_bathroomModal" alt="dining-kitchen1" title="Click to View Appliances" coords="700,351,807,421" shape="rect">
 					<area id="bungalow2_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow2_porchModal" alt="dining-kitchen1" title="Click to View Appliances" coords="545,532,374,487" shape="rect">
 
 				</map>
+
+				<img src='assets/blueprints/bungalow2.png' usemap="#image-map" style="width:auto; height:auto"><br>
 
 					<!-- Bootstrap Modal for Bungalow2 Open Terrace -->
 					<div class="modal fade" id="bungalow2_open_terraceModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -2430,8 +2456,8 @@ class Api:
 
 				}
 				result = """
-				<img src='assets/blueprints/bungalow3.png' usemap="#image-map" style="width:auto; height:auto">
-				<map name="image-map">
+				<img src='assets/blueprints/bungalow3.png' usemap="#image-map" style="width:auto; height:auto"><br>
+				<map name="image-map" style="display:none">
 				    <area id="bungalow3_bedroom1" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow3_bedroom1Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="164,109,413,360" shape="rect">
 				    <area id="bungalow3_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow3_bedroom2Modal" alt="dining-kitchen1" title="Click to View Appliances" coords="158,540,423,795" shape="rect">
 				    <area id="bungalow3_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#bungalow3_kitchenModal" alt="dining-kitchen1" title="Click to View Appliances" coords="457,97,720,326" shape="rect">
