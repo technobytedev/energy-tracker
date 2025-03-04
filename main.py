@@ -1640,14 +1640,14 @@ class Api:
 				result = """
 				<img src='assets/blueprints/duplex1.png' usemap="#image-map" style="width:auto; height:auto; margin:auto"> <br>
 				<map name="image-map" style="display:none">
-				    <area id="duplex1_service" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_serviceModal" alt="service" title="Click to View Service" coords="551,23,743,82" shape="rect">
-				    <area id="duplex1_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bathroomModal" alt="bathroom" title="Click to View Bathroom" coords="446,57,538,212" shape="rect">
-				    <area id="duplex1_bedroom1" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bedroom1Modal" alt="bedroom1" title="Click to View Bedroom 1" coords="233,94,428,293" shape="rect">
-				    <area id="duplex1_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bedroom2Modal" alt="bedroom2" title="Click to View Bedroom 2" coords="236,313,427,507" shape="rect">
-				    <area id="duplex1_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_kitchenModal" alt="kitchen" title="Click to View Kitchen" coords="552,94,748,219" shape="rect">
-				    <area id="duplex1_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_diningModal" alt="dining" title="Click to View Dining" coords="447,227,744,398" shape="rect">
-				    <area id="duplex1_living_room" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_living_roomModal" alt="living room" title="Click to View Living Room" coords="445,413,738,419,743,606,546,611,536,518,448,506" shape="poly">
-				    <area id="duplex1_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_porchModal" alt="porch" title="Click to View Porch" coords="225,529,519,615" shape="rect">
+				    <area id="duplex1_service" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_serviceModal" alt="service" title="Click to View Service" coords="602,82,822,147" shape="rect">
+				    <area id="duplex1_bathroom" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bathroomModal" alt="bathroom" title="Click to View Bathroom" coords="490,128,588,285" shape="rect">
+				    <area id="duplex1_bedroom1" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bedroom1Modal" alt="bedroom1" title="Click to View Bedroom 1" coords="256,167,471,378" shape="rect">
+				    <area id="duplex1_bedroom2" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_bedroom2Modal" alt="bedroom2" title="Click to View Bedroom 2" coords="259,401,467,612" shape="rect">
+				    <area id="duplex1_kitchen" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_kitchenModal" alt="kitchen" title="Click to View Kitchen" coords="607,163,822,348" shape="rect">
+				    <area id="duplex1_dining" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_diningModal" alt="dining" title="Click to View Dining" coords="490,362,822,480" shape="rect">
+				    <area id="duplex1_living_room" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_living_roomModal" alt="living room" title="Click to View Living Room" coords="491,508,822,507,823,735,598,736,591,616,490,613" shape="poly">
+				    <area id="duplex1_porch" class="droptarget" data-bs-toggle="modal" data-bs-target="#duplex1_porchModal" alt="porch" title="Click to View Porch" coords="246,633,586,741" shape="rect">
 				</map>
 
 				<!-- Modal for Duplex1 Service -->
